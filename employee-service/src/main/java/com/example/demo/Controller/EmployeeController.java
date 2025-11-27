@@ -47,4 +47,8 @@ public class EmployeeController {
         service.deleteEmployee(id);
         return ResponseEntity.ok("Deleted successfully");
     }
+    @GetMapping("/demo")
+    public ResponseEntity<String> getDemo() {
+        return ResponseEntity.ok("lonbow");
+    }
 }
